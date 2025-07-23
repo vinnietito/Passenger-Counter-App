@@ -1,47 +1,53 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
 }
 
-h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-h2 {
-  font-size: 3rem;
-  margin: 20px 0;
-  color: #007BFF;
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
 }
 
 button {
-  font-size: 18px;
-  padding: 10px 20px;
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-#increment-btn {
-  background-color: #28a745;
-  color: white;
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #eee;
 }
 
-#save-btn {
-  background-color: #17a2b8;
-  color: white;
+.auth-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover {
-  opacity: 0.9;
+.auth-popup input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-#save-el {
-  margin-top: 30px;
-  font-weight: bold;
-  color: #444;
+canvas {
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
 }
