@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #007BFF;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#increment-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+#save-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#save-el {
+  margin-top: 30px;
+  font-weight: bold;
+  color: #444;
+}
