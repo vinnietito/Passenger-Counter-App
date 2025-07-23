@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Passenger Counter</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Passenger Counter Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="container" id="app">
+        <h1>Passenger Counter</h1>
+        <h2 id="count-el">0</h2>
 
-  <h1>People Entered:</h1>
-  <h2 id="count-el">0</h2>
+        <button onclick="increment()">INCREMENT</button>
+        <button onclick="save()">SAVE</button>
+        <button onclick="reset()">RESET</button>
+        <button onclick="exportData()">EXPORT</button>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
 
-  <button id="increment-btn" onclick="increment()">INCREMENT</button>
-  <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="save-el">Previous entries: </p>
 
-  <p id="save-el">Previous entries: </p>
+        <canvas id="chart" width="400" height="200"></canvas>
+    </div>
 
-  <script src="script.js"></script>
+    <!-- Auth popup -->
+    <div class="auth-popup" id="auth-popup">
+        <h2>Enter Passcode</h2>
+        <input type="password" id="auth-input" placeholder="e.g. 1234">
+        <button onclick="authenticate()">Enter</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
