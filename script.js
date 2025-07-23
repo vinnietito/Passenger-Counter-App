@@ -1,7 +1,13 @@
 let count = 0
 
-let sum = 10 + 5
-console.log(sum)
+function increment() {
+    count += 1
+    document.getElementById("count-el").innerText = count
+}
 
-count = 1
-count = count + 1
+function save() {
+    let countStr = count + " - "
+    document.getElementById("save-el").textContent += countStr
+    count = 0
+    document.getElementById("count-el").innerText = count
+}
