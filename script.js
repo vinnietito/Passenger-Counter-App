@@ -38,6 +38,14 @@ function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 }
 
+function exportData2() {
+    let blob = new blob([saveEl.textContent], {type: "text/plain;charset=utf-8"});
+    let a = document.CreateElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "passanger_log.txt";
+    a.click();
+}
+
 function exportData() {
     let blob = new Blob([saveEl.textContent], { type: "text/plain;charset=utf-8" });
     let a = document.createElement("a");
